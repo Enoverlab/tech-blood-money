@@ -19,7 +19,7 @@ const SectionOne = () => {
 
                     <p>Pay <span className='Two'>₦2,000</span>  instead of <strike>₦5000</strike> </p>
 
-                    <a className='box bounce-7' href="#reg">Pre-order Now</a>
+                    <a className='box bounce-7' href="https://paystack.com/pay/thebloodmoneyintech"  rel="noreferrer" target="_blank">Pre-order Now</a>
                 </div>
 
                 <div className="picture">

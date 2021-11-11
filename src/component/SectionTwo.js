@@ -42,7 +42,7 @@ const SectionTwo = () => {
                     </ul>
 
                     <div className="last">
-                        Will receive the following benefits in your email after the purchase of the book.
+                       You will receive the following benefits in your email after the purchase of the book.
                     </div>
 
                 </div>
@@ -71,15 +71,20 @@ const StyledTwo = styled.section`
 
     h1.contain {
         max-width: 1166px;
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         font-weight: 600;
         color: #CD2A44;
         line-height: 1.5;
-        margin-bottom: 4rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+
 
         @media (max-width: 768px){
-            font-size: 1.25rem;
-            line-height: 1.7;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            text-align: left;
+            margin-bottom: 3rem;
         }
     }
 
@@ -94,11 +99,10 @@ const StyledTwo = styled.section`
 
         .last {
             margin-left: 2rem;
-            font-size: 1rem;
+            font-size: .8rem;
             font-weight: 700;
             color: #524C4C;
             line-height: 1.5;
-            max-width: 379px;
 
             @media (max-width: 768px){
                 margin-left: 0;

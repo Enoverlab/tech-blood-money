@@ -5,7 +5,7 @@ import Modal from './Modal';
 import book from '../assets/book2.png'
 
 const Form = () => {
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbxSXjrzw_lMCpy7x0zj-t-Of0lf5rqQ0CNrsmXElBxvqQ8Sp2Hu41AB4EF_g38A_s7Hmg/exec";
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbxMK2Hf5XDyCsGfd2g_2ukicNNarjDxIoPv1GvC9tJvdIbDA6GaPZ4JIkNw_w28wShiXA/exec";
     const [loading, setLoading] = useState(false)
     const [active, setActive] = useState(false);
     const [values,setValues] = useState({
@@ -30,6 +30,7 @@ const Form = () => {
         .then(res => {
             setLoading(false)
             setActive(true)
+            setValues({ name: '', phoneNumber: '', email: '' })
         })
         .catch(err => console.log(err))
     }
@@ -56,7 +57,7 @@ const Form = () => {
 
                 <div className="input-group">
                     <label htmlFor="" className='phoneLabel'>Phone Number</label>
-                    <input type="text" name='phoneNumber' className='name' required value={values.phoneNumber} onChange={handleChange}/>
+                    <input type="text" name='phone' className='name' required value={values.phoneNumber} onChange={handleChange}/>
                 </div>
 
                 <button type='submit'>{loading ? "Loading..." : "SUBMIT"}</button>
@@ -88,6 +89,13 @@ const StyledForm = styled.div`
         top: 80%;
         left: 50%;
         transform: translateX(-50%);
+        width: 350px;
+        height: auto;
+
+        @media (max-width: 768px) {
+            width: 250px;
+            top: 90%;
+        }
     }
 
     .register {
