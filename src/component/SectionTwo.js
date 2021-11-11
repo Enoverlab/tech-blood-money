@@ -33,7 +33,7 @@ const SectionTwo = () => {
                     </div>
 
                     <ul className="list">
-                        <li><span id='color'></span>A free 15 mins consultation call with the author Olabanji Ewenla regarding anything you'd like to find out about the tech industry</li>
+                        <li><span id='color'></span>A free 15 mins consultation call with the author, Olabanji Ewenla, regarding anything you'd like to find about the tech industry.</li>
                         <li><span id='color'></span>20% discount off the tuition fee for UIUX design training at Perxels Design School</li>
                         <li><span id='color'></span>20% discount off the tuition fee for Product Management training at Enoverlab</li>
                         <li><span id='color'></span>Direct link to an in-depth course on how to make money online as a freelancer</li>
@@ -41,10 +41,9 @@ const SectionTwo = () => {
                         <li><span id='color'></span>Direct link to get the most demanded course on Affiliate Marketing - 72IG course</li>
                     </ul>
 
-                    <div className="last">
-                       You will receive the following benefits in your email after the purchase of the book.
+                    <div className="last mobile">
+                        You will receive the following benefits in your email after the purchase of the book.
                     </div>
-
                 </div>
 
                 <div className="right">
@@ -53,6 +52,9 @@ const SectionTwo = () => {
                     </div>
                     <Form />
                 </div>
+            </div>
+            <div className="last web">
+                You will receive the following benefits in your email after the purchase of the book.
             </div>
             
         </StyledTwo>
@@ -71,7 +73,7 @@ const StyledTwo = styled.section`
 
     h1.contain {
         max-width: 1166px;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 600;
         color: #CD2A44;
         line-height: 1.5;
@@ -88,6 +90,35 @@ const StyledTwo = styled.section`
         }
     }
 
+    .last {
+        margin-left: 2rem;
+        font-size: .9rem;
+        font-weight: 700;
+        color: #524C4C;
+        line-height: 1.5;
+
+        &.mobile {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: block;
+                font-size: 1rem;
+            }
+        }
+
+        &.web {
+            display: block;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px){
+            margin-left: 0;
+        }
+    }
+
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -95,19 +126,9 @@ const StyledTwo = styled.section`
 
         @media (max-width: 768px){
             grid-template-columns: 1fr;
+            grid-gap: 1rem;
         }
 
-        .last {
-            margin-left: 2rem;
-            font-size: .8rem;
-            font-weight: 700;
-            color: #524C4C;
-            line-height: 1.5;
-
-            @media (max-width: 768px){
-                margin-left: 0;
-            }
-        }
 
         .left {
             .head {

@@ -107,6 +107,11 @@ const StyledForm = styled.div`
         font-weight: 600;
         color: #fff;
         margin-bottom: 3rem;
+
+        @media (max-width: 768px) {
+            font-size: .8rem;
+            line-height: 1.6;
+        }
     }
 
     .input-group {
