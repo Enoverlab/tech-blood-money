@@ -1,4 +1,4 @@
-import logo from "../assets/logo.svg"
+import logo from "../assets/logo.png"
 import shape from '../assets/backgroundshape.png'
 import background from '../assets/rec.png'
 import book from '../assets/book1.png'
@@ -52,6 +52,10 @@ const Styledone = styled.section`
     padding: 0 6%;
 
     .logo {
+        margin-top: 2rem;
+        height: 6rem;
+        width: auto;
+
         @media (max-width: 768px) {
             height: 4rem;
             margin-top: 1rem;
