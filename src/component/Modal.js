@@ -6,7 +6,7 @@ const Modal = ({ active, setActive }) => {
             <div onClick={() => setActive(!active)} className="overlay" />
             <div className="content">
                 <h2>Congratulations!</h2>
-                <p>You will be among the first poeple to be notified when the "The Blood Money in Tech" launches on the 20th of November 2021.</p>
+                <p>You will be among the first people to be notified when the "The Blood Money in Tech" launches on the 20th of November 2021.</p>
                 <h1>Get Ready!</h1>
             </div>
         </StyledModal>
