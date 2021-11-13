@@ -38,7 +38,6 @@ const SectionTwo = () => {
                         <li><span id='color'></span>20% discount off the tuition fee for Product Management training at Enoverlab</li>
                         <li><span id='color'></span>Direct link to an in-depth course on how to make money online as a freelancer</li>
                         <li><span id='color'></span>Direct link to a detailed course on how to get good-paying remote jobs from Nigeria</li>
-                        <li><span id='color'></span>Direct link to get the most demanded course on Affiliate Marketing - 72IG course</li>
                     </ul>
 
                     <div className="last mobile">

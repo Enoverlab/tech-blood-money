@@ -11,7 +11,7 @@ const Form = () => {
     const [values,setValues] = useState({
         name:"",
         email:"",
-        phoneNumber:""
+        phone:""
     })
 
     // const { name, email, phoneNumber} = values
@@ -57,7 +57,7 @@ const Form = () => {
 
                 <div className="input-group">
                     <label htmlFor="" className='phoneLabel'>Phone Number</label>
-                    <input type="text" name='phone' className='name' required value={values.phoneNumber} onChange={handleChange}/>
+                    <input type="number" name='phone' className='name' required value={values.phone} onChange={handleChange}/>
                 </div>
 
                 <button type='submit'>{loading ? "Loading..." : "SUBMIT"}</button>
