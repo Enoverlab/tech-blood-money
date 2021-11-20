@@ -14,12 +14,12 @@ const SectionOne = () => {
             <div className="container">
                 <div className="left">
                     <h1>
-                        Be among the first <span id='red'>500 people</span>  to pre-order this book and get <span id='red'>60% off.</span>
+                        Introductory price for the first <span>500</span> people; limited copies available.
                     </h1>
 
                     <p>Pay <span className='Two'>₦2,000</span>  instead of <strike>₦5000</strike> </p>
 
-                    <a className='box bounce-7' href="https://paystack.com/pay/thebloodmoneyintech"  rel="noreferrer" target="_blank">Pre-order Now</a>
+                    <a className='box bounce-7' href="https://paystack.com/pay/thebloodmoneyintech"  rel="noreferrer" target="_blank">Order Now</a>
                 </div>
 
                 <div className="picture">
