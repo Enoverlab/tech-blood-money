@@ -42,7 +42,7 @@ const Form = () => {
     return (
         
         <StyledForm>
-            <div className="register">Join the waiting list to be among the first <br /> to be notified when the book launch</div>
+            <div className="register">Join the waiting list to be among the first to be notified when the paperback is launched.</div>
 
             <form name='form' onSubmit={handleSubmit} ref={formRef}>
                 <div className="input-group">
@@ -99,7 +99,7 @@ const StyledForm = styled.div`
     }
 
     .register {
-        max-width: 400px;
+        max-width: 450px;
         margin: 0 auto;
         text-align: center;
         font-size: 1.1rem;

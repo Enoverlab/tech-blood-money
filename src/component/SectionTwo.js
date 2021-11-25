@@ -47,7 +47,7 @@ const SectionTwo = () => {
 
                 <div className="right">
                     <div className="launch">
-                        BOOK IS LAUNCHING <br /><span className='date'>20TH NOVEMBER, 2021</span>
+                        Paperback hard copies are coming soon!
                     </div>
                     <Form />
                 </div>
