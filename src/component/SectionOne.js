@@ -14,12 +14,12 @@ const SectionOne = () => {
             <div className="container">
                 <div className="left">
                     <h1>
-                        Introductory price for the first <span>500 people;</span> limited copies available.
+                        Join <span>1500+</span> other people who are changing their lives with the insights in this book
                     </h1>
 
-                    <p>Pay <span className='Two'>₦2,000</span>  instead of <strike>₦5000</strike> </p>
+                    {/* <p>Pay <span className='Two'>₦2,000</span>  instead of <strike>₦5000</strike> </p> */}
 
-                    <a className='box bounce-7' href="https://selar.co/c4pd"  rel="noreferrer" target="_blank">Order Now</a>
+                    <a className='box bounce-7' href="https://selar.co/c4pd"  rel="noreferrer" target="_blank">Download Now</a>
                 </div>
 
                 <div className="picture">
