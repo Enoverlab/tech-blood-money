@@ -14,7 +14,7 @@ const SectionOne = () => {
             <div className="container">
                 <div className="left">
                     <h1>
-                        Join <span>1500+</span> other people who are changing their lives with the insights in this book
+                        Join <span>500+ other people</span> who are currently changing their lives with the insights in this book
                     </h1>
 
                     {/* <p>Pay <span className='Two'>₦2,000</span>  instead of <strike>₦5000</strike> </p> */}
@@ -82,7 +82,8 @@ const Styledone = styled.section`
         z-index: 1;
 
         @media (max-width: 768px) {
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
             margin-top: 3rem;
         }
 
@@ -107,6 +108,11 @@ const Styledone = styled.section`
         }
 
         .left {
+
+            @media (max-width: 768px) {
+                order: 2;
+            }
+
             h1 {
                 font-size: 2.1875rem;
                 line-height: 1.5;
@@ -157,8 +163,8 @@ const Styledone = styled.section`
 
                 @media (max-width: 768px) {
                     font-size: 1.125rem;
-                    margin-top: 0;
-                    margin-bottom: 2rem;
+                    margin-top: 2rem;
+                    order: 1;
                 }
             }
         }
