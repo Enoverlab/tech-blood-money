@@ -183,7 +183,7 @@ const Styledone = styled.section`
 
             &.mobile {
                 display: block;
-                margin-top: 1rem;
+                margin-top: -2rem;
             }
         }
     }
