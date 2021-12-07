@@ -19,11 +19,12 @@ const SectionOne = () => {
 
                     {/* <p>Pay <span className='Two'>₦2,000</span>  instead of <strike>₦5000</strike> </p> */}
 
-                    <a className='box bounce-7' href="https://selar.co/c4pd"  rel="noreferrer" target="_blank">Download Now</a>
+                    <a className='box bounce-7 web' href="https://selar.co/c4pd"  rel="noreferrer" target="_blank">Download Now</a>
                 </div>
 
                 <div className="picture">
                     <img className="book" src={book} alt="" />
+                    <a className='box bounce-7 mobile' href="https://selar.co/c4pd"  rel="noreferrer" target="_blank">Download Now</a>
                 </div>
             </div>
 
@@ -91,6 +92,7 @@ const Styledone = styled.section`
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
         
         img.book {
@@ -110,7 +112,7 @@ const Styledone = styled.section`
         .left {
 
             @media (max-width: 768px) {
-                order: 2;
+
             }
 
             h1 {
@@ -121,7 +123,9 @@ const Styledone = styled.section`
                 max-width: 679px;
 
                 @media (max-width: 768px) {
-                    font-size: 1.375rem;
+                    font-size: 1.15rem;
+                    margin-top: 1rem;
+                    text-align: center;
                 }
 
                 span {
@@ -147,25 +151,39 @@ const Styledone = styled.section`
                 }
             }
 
-            .box {
-                border: none;
-                outline: none;
-                background: #CD2A44;
-                text-decoration: none;
-                font-size: 1.875rem;
-                font-weight: 700;
-                color: #fff;
-                padding: 1rem 2.5rem;
-                border-radius: 5px;
-                margin-top: 3rem;
-                display: inline-block;
-                animation: ${animate} 1.2s ease-in-out infinite;
+        }
+    }
 
-                @media (max-width: 768px) {
-                    font-size: 1.125rem;
-                    margin-top: 2rem;
-                    order: 1;
-                }
+    .box {
+        border: none;
+        outline: none;
+        background: #CD2A44;
+        text-decoration: none;
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: #fff;
+        padding: 1rem 2.5rem;
+        border-radius: 5px;
+        margin-top: 3rem;
+        display: inline-block;
+        animation: ${animate} 1.2s ease-in-out infinite;
+
+        &.mobile {
+            display: none;
+        }
+
+        
+        @media (max-width: 768px) {
+            font-size: 1.125rem;
+            margin-top: 2rem;
+
+            &.web {
+                display: none;
+            }
+
+            &.mobile {
+                display: block;
+                margin-top: 1rem;
             }
         }
     }
