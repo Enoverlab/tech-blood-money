@@ -193,14 +193,14 @@ const SlideName = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 const SlideTitle = styled.h1`
   font-size: 21px;
   font-weight: 700;
   color: #000;
   text-align: left;
-  margin: 8px 0;
+  margin: 4px 0;
   ${SlideDiv}:hover & {
     color: #fff;
   }
@@ -209,7 +209,7 @@ const SlideTitle = styled.h1`
   }
 `;
 const SlidRole = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #000;
   text-align: left;
@@ -218,7 +218,7 @@ const SlidRole = styled.p`
     color: #fff;
   }
   @media only screen and (max-width: 650px) {
-    font-size: 14px;
+    font-size: 13px;
   }
 `;
 const SlideBottom = styled.div`
