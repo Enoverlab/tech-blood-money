@@ -165,14 +165,12 @@ const SlideDiv = styled.div`
   min-height: 460px;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #cd2a44;
+  color: #fff;
   padding: 16px;
   cursor: pointer;
   transition: 0.4s ease-in;
-  :hover {
-    background: #cd2a44;
-    color: #fff;
-  }
+
   @media only screen and (max-width: 650px) {
     min-height: 300px;
     max-width: 350px;
@@ -207,12 +205,10 @@ const SlideName = styled.div`
 const SlideTitle = styled.h1`
   font-size: 21px;
   font-weight: 700;
-  color: #000;
+  color: #fff;
   text-align: left;
   margin: 4px 0;
-  ${SlideDiv}:hover & {
-    color: #fff;
-  }
+
   @media only screen and (max-width: 650px) {
     font-size: 18px;
   }
@@ -220,12 +216,10 @@ const SlideTitle = styled.h1`
 const SlidRole = styled.p`
   font-size: 14px;
   font-weight: 500;
-  color: #000;
+  color: #fff;
   text-align: left;
   margin: 0;
-  ${SlideDiv}:hover & {
-    color: #fff;
-  }
+
   @media only screen and (max-width: 650px) {
     font-size: 13px;
   }
@@ -244,13 +238,11 @@ const SlideQuote = styled.div`
 const SlideMessage = styled.p`
   font-size: 15px;
   font-weight: 400;
-  color: #000;
+  color: #fff;
   text-align: left;
   margin: 8px 0;
   line-height: 1.5;
-  ${SlideDiv}:hover & {
-    color: #fff;
-  }
+
   @media only screen and (max-width: 650px) {
     font-size: 13px;
   }
