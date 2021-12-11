@@ -1,8 +1,8 @@
-import logo from "../assets/logo.png";
-import shape from "../assets/backgroundshape.png";
-import background from "../assets/rec.png";
-import book from "../assets/book1.png";
-import styled, { keyframes } from "styled-components";
+import logo from "../assets/logo.png"
+import shape from "../assets/backgroundshape.png"
+import background from "../assets/rec.png"
+import book from "../assets/book1.png"
+import styled, { keyframes } from "styled-components"
 
 const SectionOne = () => {
   return (
@@ -43,10 +43,10 @@ const SectionOne = () => {
         </div>
       </div>
     </Styledone>
-  );
-};
+  )
+}
 
-export default SectionOne;
+export default SectionOne
 
 const animate = keyframes`
     0%{
@@ -56,7 +56,7 @@ const animate = keyframes`
     100%{
         transform: scale(1);
     }
-`;
+`
 
 const Styledone = styled.section`
   width: 100vw;
@@ -107,7 +107,7 @@ const Styledone = styled.section`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin: 16px 0;
+      margin: 4px 0;
     }
 
     img.book {
@@ -133,11 +133,11 @@ const Styledone = styled.section`
         line-height: 1.5;
         font-weight: 700;
         color: #282828;
-        max-width: 679px;
+        max-width: 700px;
 
         @media (max-width: 768px) {
-          font-size: 1.15rem;
-          margin-top: 1rem;
+          font-size: 1.1rem;
+          margin-top: 0.8rem;
           text-align: center;
         }
 
@@ -198,4 +198,4 @@ const Styledone = styled.section`
       }
     }
   }
-`;
+`

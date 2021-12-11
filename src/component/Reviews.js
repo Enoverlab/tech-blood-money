@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import Slider from "react-slick";
+import React from "react"
+import styled from "styled-components"
+import Slider from "react-slick"
 
-import review1 from "../assets/review1.jpeg";
-import review2 from "../assets/review2.jpeg";
-import review3 from "../assets/review3.jpeg";
+import review1 from "../assets/review1.jpeg"
+import review2 from "../assets/review2.jpeg"
+import review3 from "../assets/review3.jpeg"
 const Reviews = () => {
   const data = [
     {
@@ -28,7 +28,7 @@ const Reviews = () => {
         'I re-prioritised my career path in tech thanks to the quote from "The Blood Money in Tech" which says; "To scale fast and make it big financially, you need to invest your time, energy and resources in an industry, market, field or niche where there is high demand for a service with low competition.',
       image: review3,
     },
-  ];
+  ]
   var settings = {
     dots: true,
 
@@ -65,7 +65,7 @@ const Reviews = () => {
         },
       },
     ],
-  };
+  }
   return (
     <Body>
       <Cover>
@@ -109,8 +109,8 @@ const Reviews = () => {
         </SlideCover>
       </Cover>
     </Body>
-  );
-};
+  )
+}
 
 const Body = styled.div`
   width: 100%;
@@ -120,7 +120,7 @@ const Body = styled.div`
   align-items: center;
   background: #f8f8ff;
   justify-content: center;
-`;
+`
 const Cover = styled.div`
   display: flex;
   flex-direction: column;
@@ -129,7 +129,7 @@ const Cover = styled.div`
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-`;
+`
 const Title = styled.div`
   display: flex;
   flex-direction: column;
@@ -139,7 +139,7 @@ const Title = styled.div`
   width: 100%;
   max-width: 400px;
   margin: 56px auto 0 auto;
-`;
+`
 const TitleText = styled.h1`
   font-size: 32px;
   font-weight: 700;
@@ -148,7 +148,7 @@ const TitleText = styled.h1`
   @media only screen and (max-width: 650px) {
     font-size: 24px;
   }
-`;
+`
 const SlideCover = styled.div`
   width: 100%;
   margin: 40px 0;
@@ -158,7 +158,7 @@ const SlideCover = styled.div`
   grid-gap: 32px;
   align-items: center;
   justify-content: center; */
-`;
+`
 
 const SlideDiv = styled.div`
   max-width: 390px;
@@ -177,7 +177,7 @@ const SlideDiv = styled.div`
     min-height: 300px;
     max-width: 350px;
   }
-`;
+`
 
 const SlideTop = styled.div`
   display: grid;
@@ -185,18 +185,25 @@ const SlideTop = styled.div`
   gap: 24px;
   grid-gap: 24px;
   margin: 8px 0;
-`;
+  @media only screen and (max-width: 650px) {
+    grid-template-columns: 56px auto;
+  }
+`
 const SlideImg = styled.img`
   width: 72px;
   height: 72px;
   border-radius: 50%;
-`;
+  @media only screen and (max-width: 650px) {
+    width: 56px;
+    height: 56px;
+  }
+`
 const SlideName = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-`;
+`
 const SlideTitle = styled.h1`
   font-size: 21px;
   font-weight: 700;
@@ -209,7 +216,7 @@ const SlideTitle = styled.h1`
   @media only screen and (max-width: 650px) {
     font-size: 18px;
   }
-`;
+`
 const SlidRole = styled.p`
   font-size: 14px;
   font-weight: 500;
@@ -222,7 +229,7 @@ const SlidRole = styled.p`
   @media only screen and (max-width: 650px) {
     font-size: 13px;
   }
-`;
+`
 const SlideBottom = styled.div`
   display: grid;
   grid-template-columns: 24px auto;
@@ -230,10 +237,10 @@ const SlideBottom = styled.div`
   grid-gap: 24px;
   margin: 8px 0;
   align-items: flex-start;
-`;
+`
 const SlideQuote = styled.div`
   margin: 40px 0 0 0;
-`;
+`
 const SlideMessage = styled.p`
   font-size: 15px;
   font-weight: 400;
@@ -247,5 +254,5 @@ const SlideMessage = styled.p`
   @media only screen and (max-width: 650px) {
     font-size: 13px;
   }
-`;
-export default Reviews;
+`
+export default Reviews
