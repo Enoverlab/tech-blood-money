@@ -107,6 +107,7 @@ const Styledone = styled.section`
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      margin: 16px 0;
     }
 
     img.book {

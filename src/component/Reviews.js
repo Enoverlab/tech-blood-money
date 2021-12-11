@@ -135,10 +135,10 @@ const Title = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 50px;
+  min-height: 56px;
   width: 100%;
   max-width: 400px;
-  margin: 16px auto;
+  margin: 24px auto;
 `;
 const TitleText = styled.h1`
   font-size: 32px;
