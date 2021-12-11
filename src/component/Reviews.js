@@ -152,6 +152,7 @@ const TitleText = styled.h1`
 const SlideCover = styled.div`
   width: 100%;
   margin: 40px 0;
+  padding: 16px;
   /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px;
@@ -173,7 +174,7 @@ const SlideDiv = styled.div`
     color: #fff;
   }
   @media only screen and (max-width: 650px) {
-    min-height: 250px;
+    min-height: 300px;
   }
 `;
 
