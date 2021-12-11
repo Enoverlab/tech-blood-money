@@ -227,8 +227,8 @@ const SlidRole = styled.p`
 const SlideBottom = styled.div`
   display: grid;
   grid-template-columns: 24px auto;
-  gap: 24px;
-  grid-gap: 24px;
+  gap: 4px;
+  grid-gap: 4px;
   margin: 8px 0;
   align-items: flex-start;
 `
@@ -245,7 +245,7 @@ const SlideMessage = styled.p`
 
   @media only screen and (max-width: 650px) {
     font-size: 13px;
-    text-align: center;
+    text-align: left;
   }
 `
 export default Reviews
