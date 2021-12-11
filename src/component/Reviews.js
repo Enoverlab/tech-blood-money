@@ -245,6 +245,7 @@ const SlideMessage = styled.p`
 
   @media only screen and (max-width: 650px) {
     font-size: 13px;
+    text-align: center;
   }
 `
 export default Reviews
