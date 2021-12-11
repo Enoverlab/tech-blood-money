@@ -137,8 +137,8 @@ const Title = styled.div`
   justify-content: center;
   min-height: 56px;
   width: 100%;
-  max-width: 400px;
-  margin: 56px auto 0 auto;
+
+  margin: 56px 0 24px 0;
 `
 const TitleText = styled.h1`
   font-size: 32px;
@@ -191,6 +191,7 @@ const SlideImg = styled.img`
   width: 72px;
   height: 72px;
   border-radius: 50%;
+  object-fit: cover;
   @media only screen and (max-width: 650px) {
     width: 56px;
     height: 56px;
