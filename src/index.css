@@ -29,17 +29,23 @@ html::-webkit-scrollbar {
 }
 
 .slick-prev {
-  left: 25px;
+  left: 5px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #cd2a44;
+  z-index: 30;
 }
 
 .slick-next {
-  right: 25px;
+  right: 10px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #cd2a44;
+  z-index: 30;
+}
+
+.slick-slide {
+  margin: 8px 0;
 }

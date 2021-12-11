@@ -74,8 +74,8 @@ const Reviews = () => {
         </Title>
         <SlideCover>
           <Slider {...settings}>
-            {data.map((data) => (
-              <SlideDiv>
+            {data.map((data, index) => (
+              <SlideDiv key={index}>
                 <SlideTop>
                   <SlideImg
                     src={data.image}
@@ -138,7 +138,7 @@ const Title = styled.div`
   min-height: 56px;
   width: 100%;
   max-width: 400px;
-  margin: 24px auto;
+  margin: 56px auto 0 auto;
 `;
 const TitleText = styled.h1`
   font-size: 32px;
@@ -175,6 +175,7 @@ const SlideDiv = styled.div`
   }
   @media only screen and (max-width: 650px) {
     min-height: 300px;
+    max-width: 350px;
   }
 `;
 
