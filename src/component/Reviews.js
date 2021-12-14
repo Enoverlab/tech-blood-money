@@ -5,6 +5,8 @@ import Slider from "react-slick"
 import review1 from "../assets/review1.jpeg"
 import review2 from "../assets/review2.jpeg"
 import review3 from "../assets/review3.jpeg"
+import review4 from "../assets/review4.jpeg"
+import review5 from "../assets/review5.jpeg"
 const Reviews = () => {
   const data = [
     {
@@ -27,6 +29,20 @@ const Reviews = () => {
       review:
         'I re-prioritised my career path in tech thanks to the quote from "The Blood Money in Tech" which says; "To scale fast and make it big financially, you need to invest your time, energy and resources in an industry, market, field or niche where there is high demand for a service with low competition.',
       image: review3,
+    },
+    {
+      name: "Damilola Felicia",
+      role: "Content Creator & Photographer",
+      review:
+        "The Blood Money in Tech is mind blowing, engaging and interesting. It helped me understand that social media management and even content management are all part of tech. I like how the book highlighted major problems and created solutions for them. The book gave step by step guideline on how people can navigate through and several websites where anyone can apply for jobs.",
+      image: review4,
+    },
+    {
+      name: "Edison",
+      role: "Mechanical Engineer",
+      review:
+        "Your book is an eye-opener to the benefits of the not-so-newly emerging industry. It gave very detailed insights as to how one can start and thrive in the tech industry, even without prior experience, from a very realistic standpoint",
+      image: review5,
     },
   ]
   var settings = {
