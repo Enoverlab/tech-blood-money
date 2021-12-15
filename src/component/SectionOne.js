@@ -137,7 +137,7 @@ const Styledone = styled.section`
 
         @media (max-width: 768px) {
           font-size: 1.1rem;
-          margin-top: 0.8rem;
+          margin-top: 2.5rem;
           text-align: center;
         }
 
