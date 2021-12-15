@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <SectionOne />
-      <Reviews />
       <SectionTwo />
+      <Reviews web />
       <Footer />
     </div>
   );

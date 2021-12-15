@@ -7,7 +7,7 @@ import review2 from "../assets/review2.jpeg"
 import review3 from "../assets/review3.jpeg"
 import review4 from "../assets/review4.jpeg"
 import review5 from "../assets/review5.jpeg"
-const Reviews = () => {
+const Reviews = ({ web }) => {
   const data = [
     {
       name: "Oluwatoyin",
@@ -83,7 +83,7 @@ const Reviews = () => {
     ],
   }
   return (
-    <Body>
+    <Body className={web ? 'web' : 'mobile'}>
       <Cover>
         <Title>
           <TitleText>See what others are saying about the book</TitleText>
@@ -130,12 +130,29 @@ const Reviews = () => {
 
 const Body = styled.div`
   width: 100%;
+  max-width: 100vw;
   min-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #f8f8ff;
   justify-content: center;
+
+  &.web {
+    display: flex;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &.mobile {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
 `
 const Cover = styled.div`
   display: flex;
