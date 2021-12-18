@@ -7,6 +7,7 @@ import review2 from "../assets/review2.jpeg"
 import review3 from "../assets/review3.jpeg"
 import review4 from "../assets/review4.jpeg"
 import review5 from "../assets/review5.jpeg"
+import review6 from "../assets/review6.jpg"
 const Reviews = ({ web }) => {
   const data = [
     {
@@ -38,11 +39,22 @@ const Reviews = ({ web }) => {
       image: review4,
     },
     {
-      name: "Edison",
+      name: "Chimdi",
       role: "Mechanical Engineer",
       review:
         "Your book is an eye-opener to the benefits of the not-so-newly emerging industry. It gave very detailed insights as to how one can start and thrive in the tech industry, even without prior experience, from a very realistic standpoint",
       image: review5,
+    },
+    {
+      name: "Ogooluwa",
+      role: "Content Writer",
+      review:
+        `The Blood Money in Tech has enlightened my knowledge on the fact that financial success is not a guarantee by venturing into a passion that solves no specific or major problem.
+
+        The Tech industry has over twenty problem solving skills that I can learn and grow over time and Olabanji Ewenla has provided insights on how to get started with these skills.
+         
+        Some of these skills are my goals to achieve for 2022.`,
+      image: review6,
     },
   ]
   var settings = {
