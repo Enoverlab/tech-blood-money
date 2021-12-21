@@ -8,6 +8,8 @@ import review3 from "../assets/review3.jpeg"
 import review4 from "../assets/review4.jpeg"
 import review5 from "../assets/review5.jpeg"
 import review6 from "../assets/review6.jpg"
+import review7 from "../assets/review7.jpeg"
+
 const Reviews = ({ web }) => {
   const data = [
     {
@@ -55,6 +57,19 @@ const Reviews = ({ web }) => {
          
         Some of these skills are my goals to achieve for 2022.`,
       image: review6,
+    },
+    {
+      name: "Nathaniel",
+      role: "UIUX designer",
+      review:
+        `After reading this book, I have come to understand that to succeed in life, one needs to find himself in midst of over 7 billon people on earth. Finding is the first key to succeeding in life. 
+        This is a eye opener. 
+        
+        After finding oneself, decide on which area or field you will like to work in, dive into the sector and learn the necessary skills required to succeed in the field.
+        
+        The results of people currently working in tech that was shared in the book made me stand in awe. 
+        The book is really a blessing.`,
+      image: review7,
     },
   ]
   var settings = {
