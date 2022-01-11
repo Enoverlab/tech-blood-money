@@ -1,12 +1,16 @@
+import { useState } from 'react'
 import logo from "../assets/logo.png"
 import shape from "../assets/backgroundshape.png"
 import background from "../assets/rec.png"
 import book from "../assets/book1.png"
 import styled, { keyframes } from "styled-components"
+import PaymentModal from "./PaymentModal"
 
 const SectionOne = () => {
+  const [show, setShow] = useState(false)
   return (
     <Styledone>
+      <PaymentModal show={show} setShow={setShow} />
       <img src={logo} alt="" className="logo" />
 
       <img src={shape} alt="" className="redshape" />
@@ -20,14 +24,12 @@ const SectionOne = () => {
 
           {/* <p>Pay <span className='Two'>₦2,000</span>  instead of <strike>₦5000</strike> </p> */}
 
-          <a
+          <div
             className="box bounce-7 web"
-            href="https://selar.co/c4pd"
-            rel="noreferrer"
-            target="_blank"
+            onClick={() => setShow(!show)}
           >
             Download Now
-          </a>
+          </div>
         </div>
 
         <div className="picture">
@@ -179,6 +181,7 @@ const Styledone = styled.section`
     margin-top: 3rem;
     display: inline-block;
     animation: ${animate} 1.2s ease-in-out infinite;
+    cursor: pointer;
 
     &.mobile {
       display: none;
