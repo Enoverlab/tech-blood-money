@@ -34,14 +34,12 @@ const SectionOne = () => {
 
         <div className="picture">
           <img className="book" src={book} alt="" />
-          <a
+          <div
             className="box bounce-7 mobile"
-            href="https://selar.co/c4pd"
-            rel="noreferrer"
-            target="_blank"
+            onClick={() => setShow(!show)}
           >
             Download Now
-          </a>
+          </div>
         </div>
       </div>
     </Styledone>
