@@ -23,17 +23,16 @@ const SectionTwo = () => {
 
 
                     <ul className="list">
-                        <li><span id='color'></span>You will get a job in tech within the next 3-6 months</li>
-                        <li><span id='color'></span>You can start to earn atleast N100,000 within 3-6 months as a newbie in tech</li>
-                        <li><span id='color'></span>You can scale that N100,000 to between N300,000-N500,000 in 12-18 months if you keep expanding on the insights you've learnt</li>
-                        <li><span id='color'></span>You can hit N1,000,000+ in 2-3 years if you are consistent with improving yourself, your knowledge and your skills</li>
-                        <li><span id='color'></span>You will get jobs that you can choose to work from home around your family and the people that you love</li>
-                        <li><span id='color'></span>Instead of you applying for jobs, you will know how to reposition yourself so that jobs come to you and you are the one who decides what job you want and what job you don't want</li>
-                        <li><span id='color'></span>Aside from money, you will fast track your career growth in any job or field in tech; what would normally take others 5 years to achieve, you will achieve in 2-3years</li>
-                        <li><span id='color'></span>You will become a tech bro or tech sis</li>
-                        <li><span id='color'></span>You will be able to join and work with any team that is creating and building products to solve problems for people, nation's and the world at large</li>
+                        <li><span id='color'></span>You will know how to get any job you want in tech within the next 3 months.</li>
+                        <li><span id='color'></span>You can start to earn atleast N100,000 in less than 90days as a newbie in tech</li>
+                        <li><span id='color'></span>You can scale the N100,000 to N300,000 in 12-18 months if you keep implementing and expanding on the insights from the book</li>
+                        <li><span id='color'></span>You will know how and where to get valid remote jobs, especially the foreign ones</li>
+                        <li><span id='color'></span>You will learn how to position yourself for jobs to come to you, instead of you applying for jobs</li>
+                        <li><span id='color'></span>Fast track your career growth in the tech industry</li>
+                        <li><span id='color'></span>Become a confirm tech bro or tech lady</li>
+                        <li><span id='color'></span>You will understand the skills to be able to work with any team in the world</li>
                         <li><span id='color'></span>You will become more valuable, relevant and respected in any place of work you find yourself</li>
-                        <li><span id='color'></span>You will enjoy the freedom that comes with earning more than enough money to meet your regular needs and wants, to the point where you can begin to live your life on your own terms and enjoy the good things of life</li>
+                        <li><span id='color'></span>You will enjoy the freedom that comes with earning more than enough money to meet your needs and wants, to the point where you can begin to live your life on your own terms and enjoy the good things of life</li>
                     </ul>
 
                     {/* <div className="head">
