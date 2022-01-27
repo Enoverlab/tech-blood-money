@@ -18,8 +18,10 @@ const SectionOne = () => {
       <div className="container">
         <div className="left">
           <h1>
-            Do you want to know why <span>500+ people just like 
-            you</span> are currently implementing the insights in this book?
+            {/* Do you want to know why <span>500+ people just like 
+            you</span> are currently implementing the insights in this book? */}
+            Everything you need to thrive in the tech industry is here,
+            <span> Join 500+ people</span> just like you currently reading this book.
           </h1>
 
           {/* <p>Pay <span className='Two'>₦2,000</span>  instead of <strike>₦5000</strike> </p> */}
