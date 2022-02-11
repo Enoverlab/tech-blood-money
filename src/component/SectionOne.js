@@ -19,7 +19,7 @@ const SectionOne = () => {
         <div className="left">
           <h1>
             Be a sharp guy, don’t carry last oo<br />
-            <span>Guys are cashing out big in tech</span> now<br />
+            Guys are <span>cashing out big in tech</span> now<br />
             Learn how you too can do it in 3months
           </h1>
 
