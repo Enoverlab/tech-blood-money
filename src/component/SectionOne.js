@@ -18,8 +18,8 @@ const SectionOne = () => {
       <div className="container">
         <div className="left">
           <h1>
-            <span>Be a sharp guy, </span>don’t carry last oo<br />
-            Guys are cashing out big in tech now<br />
+            Be a sharp guy, don’t carry last oo<br />
+            <span>Guys are cashing out big in tech</span> now<br />
             Learn how you too can do it in 3months
           </h1>
 
