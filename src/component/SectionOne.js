@@ -18,11 +18,7 @@ const SectionOne = () => {
       <div className="container">
         <div className="left">
           <h1>
-            {/* Do you want to know why <span>500+ people just like 
-            you</span> are currently implementing the insights in this book? */}
-            {/* Everything you need to thrive in the tech industry is here<br />
-            <span>Join 500+ people</span> just like you currently reading this book. */}
-            Be a sharp guy, don’t carry last oo<br />
+            <span>Be a sharp guy, </span>don’t carry last oo<br />
             Guys are cashing out big in tech now<br />
             Learn how you too can do it in 3months
           </h1>
