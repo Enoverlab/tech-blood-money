@@ -7,6 +7,7 @@ import Reviews from './Reviews'
 const SectionTwo = () => {
     return (
         <StyledTwo>
+            <Reviews />
 
             {/* <h1 className="contain">
                 If you act upon the knowledge in this book consistently over the next 3 - 6 months, 
@@ -52,7 +53,6 @@ const SectionTwo = () => {
                     </div> */}
                 </div>
 
-                <Reviews />
 
                 <div className="right">
                     <div className="launch">
