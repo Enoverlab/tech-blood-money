@@ -13,6 +13,13 @@ import review7 from "../assets/review7.jpeg"
 const Reviews = ({ web }) => {
   const data = [
     {
+      name: "Damilola Felicia",
+      role: "Content Creator & Photographer",
+      review:
+        "The Blood Money in Tech is mind blowing, engaging and interesting. It helped me understand that social media management and even content management are all part of tech. I like how the book highlighted major problems and created solutions for them. The book gave step by step guideline on how people can navigate through and several websites where anyone can apply for jobs.",
+      image: review4,
+    },
+    {
       name: "Oluwatoyin",
       role: "Product Designer",
       review:
@@ -32,13 +39,6 @@ const Reviews = ({ web }) => {
       review:
         'I re-prioritised my career path in tech thanks to the quote from "The Blood Money in Tech" which says; "To scale fast and make it big financially, you need to invest your time, energy and resources in an industry, market, field or niche where there is high demand for a service with low competition.',
       image: review3,
-    },
-    {
-      name: "Damilola Felicia",
-      role: "Content Creator & Photographer",
-      review:
-        "The Blood Money in Tech is mind blowing, engaging and interesting. It helped me understand that social media management and even content management are all part of tech. I like how the book highlighted major problems and created solutions for them. The book gave step by step guideline on how people can navigate through and several websites where anyone can apply for jobs.",
-      image: review4,
     },
     {
       name: "Chimdi",
