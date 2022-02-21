@@ -10,7 +10,18 @@ const SectionOne = () => {
   const [show, setShow] = useState(false)
   return (
     <Styledone>
-      <PaymentModal show={show} setShow={setShow} />
+      <PaymentModal 
+        show={show === 'ebook'} 
+        setShow={setShow}
+        selar={true}
+        paystackLink="https://paystack.com/buy/the-blood-money-in-tech-zkialb"
+        selarLink="https://selar.co/thebloodmoneyintech"
+      />
+      <PaymentModal 
+        show={show === 'preorder'} 
+        setShow={setShow} 
+        paystackLink="https://paystack.com/buy/the-blood-money-in-tech-hardcopy"  
+      />
       <img src={logo} alt="" className="logo" />
 
       <img src={shape} alt="" className="redshape" />
@@ -18,18 +29,27 @@ const SectionOne = () => {
       <div className="container">
         <div className="left">
           <h1>
-            Be a sharp guy, don’t carry last<br />
+            {/* Be a sharp guy, don’t carry last<br />
             Guys are <span>cashing out big in tech</span> now<br />
-            Learn how you too can do it in 3months
+            Learn how you too can do it in 3months */}
+
+            In this book, you will learn the 7 Most Important Insights 
+            you need to succeed in the tech industry this 2022
           </h1>
 
           {/* <p>Pay <span className='Two'>₦2,000</span>  instead of <strike>₦5000</strike> </p> */}
 
           <div
             className="box bounce-7 web"
-            onClick={() => setShow(!show)}
+            onClick={() => setShow('ebook')}
           >
             Download Now
+          </div>
+          <div
+            className="box outline bounce-7 web"
+            onClick={() => setShow('preorder')}
+          >
+            Pre-order the Hard Copy
           </div>
         </div>
 
@@ -37,9 +57,15 @@ const SectionOne = () => {
           <img className="book" src={book} alt="" />
           <div
             className="box bounce-7 mobile"
-            onClick={() => setShow(!show)}
+            onClick={() => setShow('ebook')}
           >
             Download Now
+          </div>
+          <div
+            className="box bounce-7 outline mobile"
+            onClick={() => setShow('preorder')}
+          >
+            Pre-order the Hard Copy
           </div>
         </div>
       </div>
@@ -51,7 +77,7 @@ export default SectionOne
 
 const animate = keyframes`
     0%{
-        transform: scale(.92);
+        transform: scale(.95);
     }
 
     100%{
@@ -178,9 +204,26 @@ const Styledone = styled.section`
     padding: 1rem 2.5rem;
     border-radius: 5px;
     margin-top: 3rem;
-    display: inline-block;
     animation: ${animate} 1.2s ease-in-out infinite;
     cursor: pointer;
+    max-width: 470px;
+    display: inline-block;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    &.outline {
+      background: transparent;
+      border: 2px solid #cd2a44;
+      color: #cd2a44;
+      margin-left: .5rem;
+
+      @media (max-width: 768px) {
+        margin-left: 0;
+        margin-top: 2rem;
+      }
+    }
 
     &.mobile {
       display: none;
@@ -196,7 +239,6 @@ const Styledone = styled.section`
 
       &.mobile {
         display: block;
-        margin-top: -2rem;
       }
     }
   }

@@ -55,9 +55,6 @@ const SectionTwo = () => {
 
 
                 <div className="right">
-                    <div className="launch">
-                        Paperback hard copies are coming soon!
-                    </div>
                     <Form />
                 </div>
             </div>

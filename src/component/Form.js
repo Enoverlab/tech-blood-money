@@ -1,70 +1,41 @@
-import  { useRef,useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import Modal from './Modal';
 
-import book from '../assets/book2.png'
+import book from '../assets/banji.png'
 
 const Form = () => {
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbxMK2Hf5XDyCsGfd2g_2ukicNNarjDxIoPv1GvC9tJvdIbDA6GaPZ4JIkNw_w28wShiXA/exec";
-    const [loading, setLoading] = useState(false)
-    const [active, setActive] = useState(false);
-    const [values,setValues] = useState({
-        name:"",
-        email:"",
-        phone:""
-    })
-
-    // const { name, email, phoneNumber} = values
-
-    const handleChange = e => {
-        setValues({...values, [e.target.name] : e.target.value})
-    }
-        
-    const formRef = useRef(null)
-
-    const handleSubmit = e => {
-        e.preventDefault()
-        setLoading(true)
-
-        fetch(scriptUrl, { method: 'POST', body: new FormData(formRef.current) })
-        .then(res => {
-            setLoading(false)
-            setActive(true)
-            setValues({ name: '', phoneNumber: '', email: '' })
-        })
-        .catch(err => console.log(err))
-    }
-        
-
-
-
-
+    
     return (
         
         <StyledForm>
-            <div className="register">Join the waiting list to be among the first to be notified when the paperback is launched.</div>
+            <div className="register">About the Author</div>
+            <p>
+                Olabanji Ewenla is a Product Manager who is passionate 
+                about delivering consistent value to end-users and ensuring a 
+                product’s success in the marketplace. <br />
+                He is very particular about growth and so focuses on driving 
+                sustainable business growth for organisations. He has been at 
+                the core of leading the growth initiatives at Perxels - from having a community 
+                of just 15 people to 5,000+ people all over the world in less than 2 years while 
+                increasing the business revenue to over 400% in the same time. <br />
+                One of the major initiatives which he introduced at Perxels is building a structure 
+                to help Perxels students get jobs after their training. This initiative has been a 
+                great success, with 70% of Perxels students getting well-paying jobs, gigs or 
+                contracts within 3 months after their training.<br /><br />
 
-            <form name='form' onSubmit={handleSubmit} ref={formRef}>
-                <div className="input-group">
-                    <label htmlFor="" className='nameLabel'>Name</label>
-                    <input type="text" name='name' className='name' required  value={values.name} onChange={handleChange}/>
-                </div>
-                
-                <div className="input-group">
-                    <label htmlFor="" className='emailLabel'>Email</label>
-                    <input type="text" name='email' className='name' required value={values.email} onChange={handleChange}/>
-                </div>
+                He is also the co-founder of Enoverlab, an incubation training program to empower 
+                Product Managers with the knowledge, skills, and experience to build products that 
+                will thrive today, tomorrow, and in the future. <br /><br />
 
-                <div className="input-group">
-                    <label htmlFor="" className='phoneLabel'>Phone Number</label>
-                    <input type="number" name='phone' className='name' required value={values.phone} onChange={handleChange}/>
-                </div>
+                He loves education and naturally loves teaching, sharing knowledge, passing ideas, 
+                having brainstorming sessions, conducting research and doing anything that 
+                involves education. <br /><br />
 
-                <button type='submit'>{loading ? "Loading..." : "SUBMIT"}</button>
-            </form>
-
+                Outside of work, Olabanji is a musician; he sings, plays the piano and directs a 
+                worship team.
+            </p>
+            
             <img className="book" src={book} alt="book" />
-            <Modal active={active} setActive={setActive} />
         </StyledForm>
     )
 }
@@ -86,14 +57,13 @@ const StyledForm = styled.div`
 
     .book {
         position: absolute;
-        top: 80%;
+        top: 85%;
         left: 50%;
         transform: translateX(-50%);
-        width: 350px;
+        width: 200px;
         height: auto;
 
         @media (max-width: 768px) {
-            width: 250px;
             top: 90%;
         }
     }
@@ -102,58 +72,22 @@ const StyledForm = styled.div`
         max-width: 450px;
         margin: 0 auto;
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         line-height: 1.5;
         font-weight: 600;
         color: #fff;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
 
         @media (max-width: 768px) {
-            font-size: .8rem;
             line-height: 1.6;
         }
     }
 
-    .input-group {
-        margin-bottom: 1rem;
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #fafafa;
+        line-height: 1.5;
 
-        label {
-            display: block;
-            font-size: 1rem;
-            font-weight: 400;
-            color: #fff;
-            margin-bottom: 1rem;
-        }
-
-        input {
-            display: block;
-            width: 100%;
-            height: 3.5rem;
-            padding: 0 2rem;
-            outline: none;
-            border: none;
-            border-radius: 5px;
-        }
-    }
-
-    button {
-        width: 100%;
-        height: 3.5rem;
-        background: #0A122A;
-        color: #fff;
-        outline: none;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.15rem;
-        font-weight: 600;
-        cursor: pointer;
-        text-transform: uppercase;
-        margin-top: 2.5rem;
-        transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-        &:hover {
-            background: #fff;
-            color: #0A122A;
-        }
     }
 `

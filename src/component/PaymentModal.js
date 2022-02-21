@@ -2,18 +2,23 @@ import React from 'react'
 
 import styled from 'styled-components'
 
-const PaymentModal = ({ show, setShow }) => {
+const PaymentModal = ({ show, setShow, selar, paystackLink, selarLink }) => {
     return (
         <StyledPaymentModal className={show ? 'active' : ''}>
             <div onClick={() => setShow(!show)} className='overlay' />
             <div className="content">
                 <h4>
                     Limited Time Offer!!! <br />
-                    Pay <b>N2,000</b> instead of <span>N5,000</span>
+                    {selar && (
+                        <>
+                            Pay <b>N2,000</b> instead of <span>N5,000</span>
+                        </>
+                    )}
                 </h4>
-                <a rel="noreferrer" target="_blank" className='link purple' href="https://selar.co/thebloodmoneyintech">Pay with Selar</a>
-                <a rel="noreferrer" target="_blank" className='link blue' href="https://paystack.com/buy/the-blood-money-in-tech-zkialb">Pay with Paystack</a>
-                {/* <a className='yellow' href="">Pay with Flutterwave</a> */}
+                {selar &&
+                    <a rel="noreferrer" target="_blank" className='link purple' href={selarLink}>Pay with Selar</a>
+                }
+                <a rel="noreferrer" target="_blank" className='link blue' href={paystackLink}>Pay with Paystack</a>
 
                 <p>
                     Note: if you have having any challenge with payment on any of the links, 
