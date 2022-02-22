@@ -73,7 +73,6 @@ const StyledTwo = styled.section`
 
     @media (max-width: 768px) {
         padding: 1rem 6%;
-        margin-top: 3rem;
     }
 
     h1.contain {
@@ -192,6 +191,10 @@ const StyledTwo = styled.section`
         .right {
             width: 100%;
             margin-top: 3rem;
+
+            @media (max-width: 768px) {
+                margin-top: 1rem;
+            }
 
             .launch {
                 display: block;

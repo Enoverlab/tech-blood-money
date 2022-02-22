@@ -8,7 +8,7 @@ const Why = () => {
         <h3>Why you should read “The Blood Money in Tech” today</h3>
 
         <p>
-            EVERYTHING YOU NEED TO THRIVE IN TECH IS HERE! <br /><br />
+            <span>EVERYTHING YOU NEED TO THRIVE IN TECH IS HERE!</span><br /><br />
 
             Coming into tech and building a career in tech can seem daunting due to the 
             countless information you would see online or hear from different people - 
@@ -61,5 +61,8 @@ const StyledWhy = styled.section`
         font-weight: 400;
         color: #0a122a;
 
+        span {
+            font-weight: 600;
+        }
     }
 `

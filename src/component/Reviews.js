@@ -16,7 +16,11 @@ const Reviews = ({ web }) => {
       name: "Damilola Felicia",
       role: "Content Creator & Photographer",
       review:
-        "The Blood Money in Tech is mind blowing, engaging and interesting. It helped me understand that social media management and even content management are all part of tech. I like how the book highlighted major problems and created solutions for them. The book gave step by step guideline on how people can navigate through and several websites where anyone can apply for jobs.",
+        `The Blood Money in Tech” is mind blowing, engaging and interesting. 
+        It helped me understand that social media management and even content management are all part of tech. 
+        I like how Olabanji highlighted the major problems in the last chapter of the book and created solutions for them. 
+        The book gave step by step guidelines on how people can navigate through and several websites where anyone can apply 
+        for remote jobs.`,
       image: review4,
     },
     {
@@ -30,7 +34,10 @@ const Reviews = ({ web }) => {
       name: "Feranmi",
       role: "Motion Designer",
       review:
-        "This book blew my mind, and here's my conclusion; This is a book for anyone on the journey to finding better tech opportunities will keep consulting for a long time. You'll read it quickly at first, just before you set out on the adventure. And continuously, each time you want to move to the next level or whenever you find yourself stuck. It is a guidebook that you will easily pull out of traveller's back pocket and boom! - you'll know exactly what to do next. Thank you Olabanji Ewenla for putting so much effort into this.",
+        `The Blood Money in Tech” blew my mind, and here is my conclusion; this is a book anyone on the journey to finding better tech opportunities will keep consulting for a long time. 
+        You’ll read it quickly first, just before you set out on the adventure; then continuously each time you want to move to the next level or whenever you find yourself stuck.
+        It is a guidebook that you will easily pull out of your traveller's back pocket and boom, you will know exactly what to do next. 
+        Thank you Olabanji Ewenla for putting so much effort into this.`,
       image: review2,
     },
     {
@@ -44,18 +51,16 @@ const Reviews = ({ web }) => {
       name: "Chimdi",
       role: "Mechanical Engineer",
       review:
-        "Your book is an eye-opener to the benefits of the not-so-newly emerging industry. It gave very detailed insights as to how one can start and thrive in the tech industry, even without prior experience, from a very realistic standpoint",
+        "This book is a real eye-opener to the benefits of the not-so-newly emerging tech industry. It gives very detailed insights as to how one can start and thrive in the tech industry even without prior experience, and from a very realistic standpoint.",
       image: review5,
     },
     {
       name: "Ogooluwa",
       role: "Content Writer",
       review:
-        `The Blood Money in Tech has enlightened my knowledge on the fact that financial success is not a guarantee by venturing into a passion that solves no specific or major problem.
-
-        The Tech industry has over twenty problem solving skills that I can learn and grow over time and Olabanji Ewenla has provided insights on how to get started with these skills.
-         
-        Some of these skills are my goals to achieve for 2022.`,
+        `The Blood Money in Tech” has enlightened my knowledge on the fact that financial success is not a guarantee by venturing into a passion that solves no specific or major problem - if you want to be financially successful, you have to be doing something that solves a major problem for people.
+        The Tech industry has over twenty problem solving skills that I can learn and grow over time. In the book, Olabanji Ewenla has provided insights on how to get started with any of these skills.
+        `,
       image: review6,
     },
     {

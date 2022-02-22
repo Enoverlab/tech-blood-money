@@ -53,18 +53,20 @@ const StyledForm = styled.div`
     @media (max-width: 768px) {
         padding: 3rem 1.5rem;
         padding-bottom: 8rem;
+        margin-top: 0;
+        padding-top: 2rem;
     }
 
     .book {
         position: absolute;
-        top: 85%;
+        top: 88%;
         left: 50%;
         transform: translateX(-50%);
         width: 200px;
         height: auto;
 
         @media (max-width: 768px) {
-            top: 90%;
+            top: 93%;
         }
     }
 

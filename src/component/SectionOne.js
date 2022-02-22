@@ -16,12 +16,23 @@ const SectionOne = () => {
         selar={true}
         paystackLink="https://paystack.com/buy/the-blood-money-in-tech-zkialb"
         selarLink="https://selar.co/thebloodmoneyintech"
-      />
+      >
+        <p>
+          Note: if you have having any challenge with payment on any of the links, 
+          do send a mail to <a className='mail' href="mailto:thebloodmoneyintech@gmail.com">thebloodmoneyintech@gmail.com</a>
+        </p>
+      </PaymentModal>
       <PaymentModal 
         show={show === 'preorder'} 
         setShow={setShow} 
         paystackLink="https://paystack.com/buy/the-blood-money-in-tech-hardcopy"  
-      />
+        title={true}
+      >
+        <p>
+          Note: Please follow the instructions carefully before and after making payment. 
+          Email <a className='mail' href="mailto:thebloodmoneyintech@gmail.com">thebloodmoneyintech@gmail.com</a> if you have any issues.
+        </p>
+      </PaymentModal>
       <img src={logo} alt="" className="logo" />
 
       <img src={shape} alt="" className="redshape" />
@@ -29,12 +40,7 @@ const SectionOne = () => {
       <div className="container">
         <div className="left">
           <h1>
-            {/* Be a sharp guy, don’t carry last<br />
-            Guys are <span>cashing out big in tech</span> now<br />
-            Learn how you too can do it in 3months */}
-
-            In this book, you will learn the 7 Most Important Insights 
-            you need to succeed in the tech industry this 2022
+            you will find <span>the 7 Most Important Insights </span>you need to succeed in tech this 2022
           </h1>
 
           {/* <p>Pay <span className='Two'>₦2,000</span>  instead of <strike>₦5000</strike> </p> */}
@@ -43,7 +49,7 @@ const SectionOne = () => {
             className="box bounce-7 web"
             onClick={() => setShow('ebook')}
           >
-            Download Now
+            Download E-book
           </div>
           <div
             className="box outline bounce-7 web"
@@ -147,7 +153,7 @@ const Styledone = styled.section`
       @media (max-width: 768px) {
         max-width: 200px;
         margin: 0 auto;
-        margin-bottom: 4rem;
+        margin-bottom: 1.5rem;
       }
     }
 
@@ -198,8 +204,8 @@ const Styledone = styled.section`
     outline: none;
     background: #cd2a44;
     text-decoration: none;
-    font-size: 1.875rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: #fff;
     padding: 1rem 2.5rem;
     border-radius: 5px;

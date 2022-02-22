@@ -15,17 +15,28 @@ const Cta = () => {
             selar={true}
             paystackLink="https://paystack.com/buy/the-blood-money-in-tech-zkialb"
             selarLink="https://selar.co/thebloodmoneyintech"
-        />
+        >
+            <p>
+                Note: if you have having any challenge with payment on any of the links, 
+                do send a mail to <a className='mail' href="mailto:thebloodmoneyintech@gmail.com">thebloodmoneyintech@gmail.com</a>
+            </p>
+        </PaymentModal>
         <PaymentModal 
             show={show === 'preorder'} 
             setShow={setShow} 
             paystackLink="https://paystack.com/buy/the-blood-money-in-tech-hardcopy"  
-        />
+            title={true}
+        >
+            <p>
+            Note: Please follow the instructions carefully before and after making payment. 
+            Email <a className='mail' href="mailto:thebloodmoneyintech@gmail.com">thebloodmoneyintech@gmail.com</a> if you have any issues.
+            </p>
+        </PaymentModal>
         <button
             className='button'
             onClick={() => setShow('ebook')}
         >
-            Download Now
+            Download E-book
         </button>
         <button
             className='button outline'
@@ -60,6 +71,7 @@ const StyledCta = styled.section`
 
     @media (max-width: 768px) {
         flex-direction: column;
+        margin-top: 8rem;
     }
 
     .button {

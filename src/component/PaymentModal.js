@@ -2,13 +2,13 @@ import React from 'react'
 
 import styled from 'styled-components'
 
-const PaymentModal = ({ show, setShow, selar, paystackLink, selarLink }) => {
+const PaymentModal = ({ children, show, setShow, selar, paystackLink, selarLink, title }) => {
     return (
         <StyledPaymentModal className={show ? 'active' : ''}>
             <div onClick={() => setShow(!show)} className='overlay' />
             <div className="content">
                 <h4>
-                    Limited Time Offer!!! <br />
+                    {title ? "You are paying for the book’s hard copy" : "Limited Time Offer!!!"} <br />
                     {selar && (
                         <>
                             Pay <b>N2,000</b> instead of <span>N5,000</span>
@@ -20,10 +20,7 @@ const PaymentModal = ({ show, setShow, selar, paystackLink, selarLink }) => {
                 }
                 <a rel="noreferrer" target="_blank" className='link blue' href={paystackLink}>Pay with Paystack</a>
 
-                <p>
-                    Note: if you have having any challenge with payment on any of the links, 
-                    do send a mail to <a className='mail' href="mailto:thebloodmoneyintech@gmail.com">thebloodmoneyintech@gmail.com</a>
-                </p>
+                {children}
             </div>
         </StyledPaymentModal>
     )
@@ -81,6 +78,8 @@ const StyledPaymentModal = styled.section`
             line-height: 1.5;
             margin-bottom: 2rem;
             color: #000;
+            max-width: 400px;
+            text-align: center;
 
             @media (max-width: 768px) {
                 font-size: 1.25rem;
