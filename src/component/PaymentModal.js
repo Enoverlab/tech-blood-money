@@ -8,17 +8,30 @@ const PaymentModal = ({ children, show, setShow, selar, paystackLink, selarLink,
             <div onClick={() => setShow(!show)} className='overlay' />
             <div className="content">
                 <h4>
-                    {title ? "You are paying for the book’s hard copy" : "Limited Time Offer!!!"} <br />
-                    {selar && (
+                    <b>
+                        {title ? "Order the Hardcopy now!" : "Download the E-book now!"} <br />
+                    </b>
+                    {selar ? (
                         <>
                             Pay <b>N2,000</b> instead of <span>N5,000</span>
                         </>
-                    )}
+                    ):
+                    (
+                        <>
+                            For only N5,000!
+                        </>
+                    )
+                    }
                 </h4>
                 {selar &&
                     <a rel="noreferrer" target="_blank" className='link purple' href={selarLink}>Pay with Selar</a>
                 }
                 <a rel="noreferrer" target="_blank" className='link blue' href={paystackLink}>Pay with Paystack</a>
+                
+                {
+                    selar &&
+                    <p><b>FREE DELIVERY TO YOU ANYWHERE IN NIGERIA!!!</b></p>
+                }
 
                 {children}
             </div>

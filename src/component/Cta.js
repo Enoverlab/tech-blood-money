@@ -28,8 +28,12 @@ const Cta = () => {
             title={true}
         >
             <p>
-            Note: Please follow the instructions carefully before and after making payment. 
-            Email <a className='mail' href="mailto:thebloodmoneyintech@gmail.com">thebloodmoneyintech@gmail.com</a> if you have any issues.
+                Note: Ensure to put in your delivery details correctly.
+                Send an email to 
+                <a className='mail' href="mailto:thebloodmoneyintech@gmail.com"> thebloodmoneyintech@gmail.com </a>
+                or call 
+                <a className='mail' href="tel:+2349063124595"> 09063124595 </a>
+                if you have any issues.
             </p>
         </PaymentModal>
         <button
