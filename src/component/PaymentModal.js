@@ -29,7 +29,7 @@ const PaymentModal = ({ children, show, setShow, selar, paystackLink, selarLink,
                 <a rel="noreferrer" target="_blank" className='link blue' href={paystackLink}>Pay with Paystack</a>
                 
                 {
-                    selar &&
+                    !selar &&
                     <p><b>FREE DELIVERY TO YOU ANYWHERE IN NIGERIA!!!</b></p>
                 }
 
