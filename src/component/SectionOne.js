@@ -14,7 +14,7 @@ const SectionOne = () => {
         show={show === 'ebook'} 
         setShow={setShow}
         selar={true}
-        paystackLink="https://paystack.com/buy/the-blood-money-in-tech-zkialb"
+        paystackLink="https://paystack.com/buy/the-blood-money-in-tech-soft-copy"
         selarLink="https://selar.co/thebloodmoneyintech"
       >
         <p>
@@ -25,7 +25,7 @@ const SectionOne = () => {
       <PaymentModal 
         show={show === 'preorder'} 
         setShow={setShow} 
-        paystackLink="https://paystack.com/buy/the-blood-money-in-tech-hardcopy"  
+        paystackLink="https://paystack.com/buy/the-blood-money-in-tech-soft-copy"  
         title={true}
       >
         <p>
