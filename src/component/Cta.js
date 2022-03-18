@@ -13,7 +13,7 @@ const Cta = () => {
             show={show === 'ebook'} 
             setShow={setShow}
             selar={true}
-            paystackLink="https://paystack.com/buy/the-blood-money-in-tech-zkialb"
+            paystackLink="https://paystack.com/buy/the-blood-money-in-tech-soft-copy"
             selarLink="https://selar.co/thebloodmoneyintech"
         >
             <p>
@@ -46,7 +46,7 @@ const Cta = () => {
             className='button outline'
             onClick={() => setShow('preorder')}
         >
-            Pre-order the Hard Copy
+            Order the Hard Copy
         </button>
     </StyledCta>
   )
