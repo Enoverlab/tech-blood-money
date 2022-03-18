@@ -23,11 +23,12 @@ const SectionOne = () => {
         </p>
       </PaymentModal>
       <PaymentModal 
-        show={show === 'preorder'} 
+        show={show === 'order'} 
         setShow={setShow} 
-        paystackLink="https://paystack.com/buy/the-blood-money-in-tech-soft-copy"  
+        paystackLink="https://paystack.com/buy/the-blood-money-in-tech-hardcopy"  
         title={true}
       >
+        
         <p>
           Note: Ensure to put in your delivery details correctly.
           Send an email to 
@@ -57,9 +58,9 @@ const SectionOne = () => {
           </div>
           <div
             className="box outline bounce-7 web"
-            onClick={() => setShow('preorder')}
+            onClick={() => setShow('order')}
           >
-            Pre-order the Hard Copy
+            Order the Hard Copy
           </div>
         </div>
 
@@ -73,9 +74,9 @@ const SectionOne = () => {
           </div>
           <div
             className="box bounce-7 outline mobile"
-            onClick={() => setShow('preorder')}
+            onClick={() => setShow('order')}
           >
-            Pre-order the Hard Copy
+            Order the Hard Copy
           </div>
         </div>
       </div>
