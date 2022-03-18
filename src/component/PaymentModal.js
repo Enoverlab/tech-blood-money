@@ -13,7 +13,7 @@ const PaymentModal = ({ children, show, setShow, selar, paystackLink, selarLink,
                     </b>
                     {selar ? (
                         <>
-                            Pay <b>N2,000</b> instead of <span>N5,000</span>
+                                Get it now for N2000
                         </>
                     ):
                     (
@@ -28,11 +28,6 @@ const PaymentModal = ({ children, show, setShow, selar, paystackLink, selarLink,
                 }
                 <a rel="noreferrer" target="_blank" className='link blue' href={paystackLink}>Pay with Paystack</a>
                 
-                {
-                    !selar &&
-                    <p><b>FREE DELIVERY TO YOU ANYWHERE IN NIGERIA!!!</b></p>
-                }
-
                 {children}
             </div>
         </StyledPaymentModal>
