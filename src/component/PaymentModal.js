@@ -13,12 +13,12 @@ const PaymentModal = ({ children, show, setShow, selar, paystackLink, selarLink,
                     </b>
                     {selar ? (
                         <>
-                                Get it now for N2000
+                                Get it now for N5000
                         </>
                     ):
                     (
                         <>
-                            For only N5,000!
+                            For only N10,000!
                         </>
                     )
                     }
@@ -26,7 +26,11 @@ const PaymentModal = ({ children, show, setShow, selar, paystackLink, selarLink,
                 {selar &&
                     <a rel="noreferrer" target="_blank" className='link purple' href={selarLink}>Pay with Selar</a>
                 }
-                <a rel="noreferrer" target="_blank" className='link blue' href={paystackLink}>Pay with Paystack</a>
+
+                {
+                    selar ? <a rel="noreferrer" target="_blank" className='link blue' href={paystackLink}>Pay with Paystack</a> : <a rel="noreferrer" className='link blue' href='#g' disabled>Out of Stock!!</a>
+                }
+                
                 
                 {children}
             </div>
@@ -142,7 +146,7 @@ const StyledPaymentModal = styled.section`
             }
 
             &.blue {
-                background: #00C3F7;
+                background: rgba(0,195,247,0.5);
             }
 
             &.yellow {
@@ -156,6 +160,9 @@ const StyledPaymentModal = styled.section`
             &:hover {
                 transform: scale(1.03);
                 transition: transform .3s ease-in-out;
+            }
+            &:disabled{
+                background: rgba(0,195,247,0.5);
             }
         }
     }
