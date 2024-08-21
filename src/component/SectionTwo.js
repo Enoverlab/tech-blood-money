@@ -26,7 +26,7 @@ const SectionTwo = () => {
                     <ul className="list">
                         <li><span id='color'></span>You will know how to get any job you want in tech within the next 3 months.</li>
                         <li><span id='color'></span>You can start to earn atleast N100,000 in less than 90days as a newbie in tech</li>
-                        <li><span id='color'></span>You can scale the N100,000 to N300,000 in 12-18 months if you keep implementing and expanding on the insights from the book</li>
+                        <li><span id='color'></span>You can scale the N200,000 to N500,000 in 12-18 months if you keep implementing and expanding on the insights from the book</li>
                         <li><span id='color'></span>You will know how and where to get valid remote jobs, especially the foreign ones</li>
                         <li><span id='color'></span>You will learn how to position yourself for jobs to come to you, instead of you applying for jobs</li>
                         <li><span id='color'></span>Fast track your career growth in the tech industry</li>
