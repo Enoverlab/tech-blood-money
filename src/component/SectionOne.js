@@ -45,7 +45,7 @@ const SectionOne = () => {
       <div className="container">
         <div className="left">
           <h1>
-            In this book, you will find <span>the 7 Most Important Insights </span>you need to succeed in tech this 2024
+            In this book, you will find <span>the 7 Most Important Insights </span>you need to succeed in tech this {new Date().getUTCFullYear()}
           </h1>
 
           {/* <p>Pay <span className='Two'>₦2,000</span>  instead of <strike>₦5000</strike> </p> */}
