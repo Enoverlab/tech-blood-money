@@ -13,12 +13,12 @@ const PaymentModal = ({ children, show, setShow, selar, paystackLink, selarLink,
                     </b>
                     {selar ? (
                         <>
-                                Get it now for N5000
+                                Get it now for N5,500
                         </>
                     ):
                     (
                         <>
-                            For only N10,000!
+                            For only N10,500!
                         </>
                     )
                     }
